@@ -9,11 +9,11 @@ const MoviesPage = () => {
   const [error, setError] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') || '';
-  const [inputValue, setInputValue] = useState(query); // Стан для значення в полі вводу
+  const [inputValue, setInputValue] = useState(query); 
 
   useEffect(() => {
     if (!query) {
-      setMovies([]); // Очистити список фільмів, якщо запит порожній
+      setMovies([]); 
       return;
     }
 
@@ -37,7 +37,7 @@ const MoviesPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputValue.trim() === '') {
-      setSearchParams({}); // Очистити параметри, якщо запит порожній
+      setSearchParams({}); 
       return;
     }
     setSearchParams({ query: inputValue.trim() });

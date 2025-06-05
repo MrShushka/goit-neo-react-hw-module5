@@ -21,7 +21,7 @@ export const App = () => {
             <Route path="cast" element={<MovieCast />} />
             <Route path="reviews" element={<MovieReviews />} />
           </Route>
-          <Route path="*" element={<NotFoundPage />} /> {/* Catch-all для неіснуючих маршрутів */}
+          <Route path="*" element={<NotFoundPage />} /> 
         </Routes>
       </Suspense>
     </>
