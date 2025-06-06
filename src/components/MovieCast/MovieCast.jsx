@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchMovieCredits, getImageUrl } from '../../services/api';
-import styles from './MovieCast.module.css'; // Додайте стилі, якщо потрібно
+import styles from './MovieCast.module.css'; 
 
 const MovieCast = () => {
   const { movieId } = useParams();
